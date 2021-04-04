@@ -1,0 +1,65 @@
+html,
+body {
+  font-family: "Indie Flower", cursive !important;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 72px !important;
+}
+
+.custom-nav-gray {
+  background-color: #89cff0 !important;
+  padding: 20px;
+  font-size: 32px;
+}
+
+.navbar-brand {
+  color: black !important;
+  font-size: 32px !important;
+}
+
+.home-container {
+  height: calc(100vh - 80px);
+}
+
+.btn-primary {
+  background-color: #89cff0 !important;
+  border-color: #89cff0 !important;
+}
+
+.home-container-left {
+  padding: 100px;
+}
+
+.home-mission-header {
+  margin-bottom: 5%;
+}
+
+.home-mission-text {
+  margin-bottom: 3%;
+}
+
+.contact-container-dark {
+  background-color: lightgray;
+}
+
+.contact-methods-container {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.contact-graphic {
+  height: 5em;
+}
+
+.contact-text {
+  font-size: 4em;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 5em;
+}
+
+.contact-method-container {
+  width: 40%;
+}
