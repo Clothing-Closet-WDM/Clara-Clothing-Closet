@@ -24,6 +24,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -32,107 +33,165 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed custom-nav-gray">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed custom-nav" id="clara-navbar-home">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <img src="./assets/graphics/shirt-temp-logo.svg" alt="" width="60" height="48"
                     class="d-inline-block align-text-top">&nbsp;Clara's Clothing Closet
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse justify-content-end" id="navbarText">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#donations">
-                            Donations
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="#contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <button class="btn btn-light" onclick="window.location.href='#contact'">Contact Us</button>
         </div>
     </nav>
-    <div class="container-fluid home-container">
-        <div class="row d-flex align-items-center justify-content-center" style="height: 100%;">
-            <div class="col-md-4 home-container-left">
-                <h1 class="home-mission-header">Helping Youth Find Their Fit</h1>
-                <h3 class="home-mission-text">Providing teenagers and young adults with
-                    good-quality and stylish clothing to boost
-                    self-confidence and encourage success</h3>
-                <button class="btn btn-primary">Learn More</button>
+    <div class="home-container row d-flex align-items-center justify-content-center text-center text-lg-start">
+        <div class="col-lg-4" style="margin-top: 100px;">
+            <h1 class="home-mission-header">Helping Youth Find Their Fit</h1>
+            <h3 class="home-mission-text">Providing teenagers and young adults with
+                good-quality and stylish clothing to boost
+                self-confidence and encourage success</h3>
+            <button class="btn btn-primary" onclick="window.location.href='#learnMore'">Learn More</button>
+        </div>
+        <div class="col-lg-5">
+            <img class="img-fluid" src="./assets/images/hero-graphic.png" />
+        </div>
+    </div>
+    <div id="learnMore" class="row d-flex align-items-center justify-content-center text-center"
+        style="height: 100%; background-color: #89cff0; padding: 150px 50px">
+        <div class="col-md-auto">
+            <h1>Free Clothes to Kids in Central Iowa</h1>
+            <h3><strong>Open 5:30-7:00 PM on Tuesdays and Thursdays</strong> for access to various donated clothing
+                items. Located at <strong>815 8th
+                    Street at Imani Family Church, </strong>Clara's Clothing Closet is helping young people in the
+                West Des Moines area find clothes that best fit their style. Teens and Young Adults can enter in the
+                front
+                entrance or knock if using the back entrance.
+            </h3>
+        </div>
+    </div>
+    <div id="donations" class="row d-flex align-items-center justify-content-end justify-content-evenly"
+        style="height: 100%; background-color: #C4C4C4; padding: 150px 50px">
+        <div class="col-md-5" style="margin-bottom: 50px;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/closet5.jpeg" class="d-block w-100"
+                            alt="Donated clothes at our location">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/closet3.jpeg" class="d-block w-100"
+                            alt="A donated dress on a mannequin at our location">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-5">
-                <img class="img-fluid" src="./assets/images/hero-graphic.png" />
+        </div>
+        <div class="col-md-3 home-container-left">
+            <h1 class="home-mission-header">Donations</h1>
+            <div class="accordion accordion-flush donation-accordion" id="donation-accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="inventory-heading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#inventory" aria-expanded="false" aria-controls="inventory">
+                            Our Inventory
+                        </button>
+                    </h2>
+                    <div id="inventory" class="accordion-collapse collapse" aria-labelledby="inventory"
+                        data-bs-parent="#donation-accordion">
+                        <div class="accordion-body">
+                            Our closet hosts a variety of clothes including:
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- Something</li>
+                                <li class="list-group-item">- Probably some clothes</li>
+                                <li class="list-group-item">- More clothes I'd bet</li>
+                                <li class="list-group-item">- Potentially more clothes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="acceptable-donations-heading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#acceptable-donations" aria-expanded="false"
+                            aria-controls="acceptable-donations">
+                            Acceptable Donations
+                        </button>
+                    </h2>
+                    <div id="acceptable-donations" class="accordion-collapse collapse"
+                        aria-labelledby="acceptable-donations" data-bs-parent="#donation-accordion">
+                        <div class="accordion-body">
+                            Any stylish clothing that’s still in good condition! Avoid:
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">- Holes</li>
+                                <li class="list-group-item">- Unfixable stains</li>
+                                <li class="list-group-item">- Other damage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="how-to-donate-heading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#how-to-donate" aria-expanded="false" aria-controls="how-to-donate">
+                            How to Donate
+                        </button>
+                    </h2>
+                    <div id="how-to-donate" class="accordion-collapse collapse" aria-labelledby="how-to-donate"
+                        data-bs-parent="#donation-accordion">
+                        <div class="accordion-body">
+                            Donations are accepted at our <a href="#closet-location">location</a> from 5:30-7:00
+                            PM on Tuesdays and Thursdays
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid home-container" style = "background-color: #C4C4C4">
-        <div class="row d-flex align-items-center justify-content-end" style="height: 100%;">
-            <div class="col-md-4 home-container-left">
-                <h1 class="home-mission-header">Home Container 2</h1>
-                <h3 class="home-mission-text">text</h3>
-            </div>
-            <div class="col-md-5">
-                    
-            </div>
+    <div id="about" class="row d-flex align-items-center justify-content-center"
+        style="height: 100%; padding: 150px 50px">
+        <div class=" col-md-4 home-container-left">
+            <h1 class="home-mission-header">About The Founder</h1>
+            <h3 class="home-mission-text">Clara's Bio</h3>
+        </div>
+        <div class="col-md-5">
         </div>
     </div>
-    <div class="container-fluid home-container">
-        <div class="row d-flex align-items-center justify-content-center" style="height: 100%;">
-            <div class="col-md-4 home-container-left">
-                <h1 class="home-mission-header">Home Container 3</h1>
-                <h3 class="home-mission-text">Text</h3>
-            </div>
-            <div class="col-md-5">
-            </div>
-        </div>
-    </div>
-    <div class="contact-container-dark align-items-center justify-content-center">
-        <h1 class="text-center">Contact Us</h1>
-        <div class="contact-methods-container d-flex flex-column pl-3 pr-3">
-            <div class="contact-method-container col-lg-10 col-md-12">
-                <img class="contact-graphic" src="assets/graphics/mail.svg" />
+    <div id="contact" class="d-flex row contact-container-dark align-items-center justify-content-center"
+        style="padding: 100px 50px">
+        <h1 class=" text-center">Contact Us</h1>
+        <div class="col-md-auto contact-methods-container d-flex flex-column pl-3 pr-3 ">
+            <div class="contact-method-container">
+                <i class="bi-envelope contact-graphic"></i>
                 <span class="contact-text">
                     <a href="mailto:clothingclosetwdm@gmail.com">clothingclosetwdm@gmail.com</a>
                 </span>
             </div>
-            <div class="contact-method-container col-md-12">
-                <img class="contact-graphic" src="assets/graphics/address-location.svg" />
+            <div class="contact-method-container" id="closet-location">
+                <i class="bi-geo-alt contact-graphic"></i>
                 <span class="contact-text">
-                    <a href="https://goo.gl/maps/ns8KaacCH4oLuZSy8" target="_blank">815 8th Street at Imani Family
+                    <a href="https://goo.gl/maps/ns8KaacCH4oLuZSy8" target="_blank">815 8th Street at Imani
+                        Family
                         Church</a>
                 </span>
             </div>
-            <div class="contact-method-container col-lg-6 col-md-12">
-                <img class="contact-graphic" src="assets/graphics/phone-call.svg" />
+            <div class="contact-method-container">
+                <i class="bi-telephone contact-graphic"></i>
                 <span class="contact-text">
                     <a href="tel:+1-515-343-6017">515-343-6017</a>
                 </span>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed footer-nav">
-        <div class="container-fluid justify-content-start">
-            <img src="./assets/graphics/shirt-temp-logo.svg" alt="" width="60" height="48"
+    <footer class="d-flex navbar navbar-expand-lg navbar-light navbar-fixed footer-nav" style="padding: 50px;">
+        <div class=" container-fluid justify-content-start text-center text-lg-start">
+            <a class="navbar-brand" href="/">
+                <img src="./assets/graphics/shirt-temp-logo.svg" alt="" width="60" height="48"
                     class="d-inline-block align-text-top">&nbsp;Clara's Clothing Closet
+            </a>
         </div>
-    </nav>
+        <div class="container-fluid justify-content-end text-center text-lg-start">
+            <h3>Providing teenagers and young adults with good-quality and stylish clothing to boost self-confidence
+                and encourage
+                success</h3>
+        </div>
+    </footer>
 </body>
 
 </html>
