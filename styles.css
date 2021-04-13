@@ -73,6 +73,14 @@ h1 {
   font-weight: bold;
 }
 
+.learn-more-header {
+  font-size: calc(4vw + 15px);
+}
+
+.learn-more-text {
+  font-size: calc(1vw + 15px);
+}
+
 .home-mission-text {
   margin-bottom: 10px;
 }
