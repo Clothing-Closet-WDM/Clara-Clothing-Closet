@@ -106,7 +106,7 @@ h1 {
 }
 
 .contact-text {
-  font-size: 4em;
+  font-size: calc(2vw + 10px);
   margin-left: 1em;
   margin-right: 1em;
   width: 5em;
