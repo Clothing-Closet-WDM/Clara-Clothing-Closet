@@ -52,7 +52,8 @@ h1 {
   border-color: #a5daf3 !important;
 }
 
-.carousel {
+.carousel,
+.img-bordered {
   border: 10px solid white;
   border-radius: 8px;
   box-shadow: 0px 0px 20px rgba(76, 82, 103, 0.2);
