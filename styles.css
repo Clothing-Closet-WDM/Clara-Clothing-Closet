@@ -25,7 +25,7 @@ h1 {
 
 .navbar-brand {
   color: black !important;
-  font-size: 32px !important;
+  font-size: calc(1vw + 20px) !important;
 }
 
 .home-container {
