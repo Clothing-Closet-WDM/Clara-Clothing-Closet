@@ -113,6 +113,10 @@ h1 {
   width: 5em;
 }
 
+.contact-text a {
+  color: black;
+}
+
 .footer-nav {
   background-color: #ffffff !important;
   padding: 20px;
