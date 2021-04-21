@@ -84,6 +84,9 @@ h1 {
 
 .home-mission-text {
   margin-bottom: 10px;
+  font-size: calc(1.3rem + .6vw);
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .contact-container-dark {
